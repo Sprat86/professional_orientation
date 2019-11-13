@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Список вопросов</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body class="body">
+
+<header class="header">
+    <h1 class="header__title">Добро пожаловать!</h1>   
+</header>
+
+<main>
+<div class="wrapper">
+<h2>Ответьте, пожалуйста, на следующие вопросы на профориентацию :</h2>
+
+<div class='container'></div>
+
+<form>
+  <fieldset>
+    <legend>Вопрос №1:</legend>
+
+    <input type="radio" id="tasks" name="question__1">
+    <label for="tasks">Люблю решать задачи</label><br/>
+
+    <input type="radio" id="draw" name="question__1">
+    <label for="draw">Умею рисовать</label><br/>
+
+    <input type="radio" id="talk" name="question__1">
+    <label for="talk">Много общаюсь с друзьями или незнакомыми людьми</label>
+  </fieldset>
+
+
+  <fieldset class="question__random">
+    <legend>Вопрос №2:</legend>
+
+    <input type="radio" id="embroider" name="question__2">
+    <label for="embroider">Люблю вышивать крестиком</label><br/>
+
+    <input type="radio" id="assure" name="question__2">
+    <label for="assure">Имею дар убеждения</label><br/>
+
+    <input type="radio" id="parse" name="question__2">
+    <label for="parse">Разбираю всю сломанную (и не только) технику в доме</label>
+  </fieldset>
+
+
+  <fieldset class="question__random">
+    <legend>Вопрос №2:</legend>
+
+    <input type="radio" id="documents" name="question__3">
+    <label for="documents">Знаю, как работать с документацией</label><br/>
+
+    <input type="radio" id="computer" name="question__3">
+    <label for="computer">Выберу компьютер вместо прогулки</label><br/>
+
+    <input type="radio" id="art" name="question__3">
+    <label for="gart">Разбираюсь в искусстве</label><br/> 
+  </fieldset>  
+</form>
+
+<div class='result__container'>
+    <div class='result'>
+        <p><strong>Текущие значения:</strong></p>
+        <ul>
+            <li>Программист: <span class="result__programmer"></span></li>
+            <li>Менеджер: <span class="result__manager"></span></li>
+            <li>Дизайнер: <span class="result__designer"></span></li>
+        </ul>
+    </div>
+</div>
+<button class='button__count'>Определить профессию</button>
+<button class='button__reset'>Пройти ещё раз</button>
+
+</div>
+</main>
+
+<footer>
+    <div class="footer__copyright">
+        <p>Разработано Боткиным Александром <a href="https://github.com/Sprat86" >https://github.com/Sprat86</a></p>        
+    </div>
+</footer>
+
+<script src="index.js"></script>
+
+</body>
+</html>
